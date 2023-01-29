@@ -1,0 +1,32 @@
+body {
+    background: #324566;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    overflow: hidden;
+    /*margin: 0;*/
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 600px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.input {
+    margin: 0 10px;
+    color: #000000;
+}
+.add{
+    margin: 0 10px;
+}
+.email{
+    margin: 20px 10px;
+}.password{
+    margin: 20px 10px;
+}
