@@ -16,6 +16,8 @@
 // prompt('hi')
 // open("https://www.youtube.com")
 
+
+
 ////////////////////////////////////////////////
 
 // console.log(window)
@@ -41,7 +43,7 @@ const off = document.querySelector('.off')
 for (let i = 0; i < n; i++) {
     const square = document.createElement('div')
     container.append(square)
-    // square.setAttribute('class', 'square')
+    square.setAttribute('class', 'square')
     square.classList.add("square")
     square.addEventListener('mouseover', () =>
         itemStyle(square)

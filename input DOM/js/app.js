@@ -2,7 +2,7 @@
 // click
 // dblclick
 
-// ---keyboard events
+// --keyboard events
 // keydown - на месте эле иштейт
 // keyup - кой бергенден кийин иштейт
 
@@ -30,13 +30,13 @@
 // ошол нересеге барабар
 
 
-// form.addEventListener('reset', (e) => {
+// window.addEventListener('reset', (e) => {
 //     e.preventDefault()
 // })
-
+// const input = document.querySelector('.email')
 // input.addEventListener('keydown', (e) => {
 //     if(e.key === "Enter") {
-//         alert('we')
+//         open("https://www.youtube.com/")
 //     }
 // })
 // input.addEventListener('keydown', (e) => {
@@ -44,6 +44,9 @@
 //         console.log('32')
 //     }
 // })
+// console.log(window)
+// console.log(document)
+// console.log(location)
 
 // preventDefault - тосколдук кылган нерсени жоготот
 
@@ -71,7 +74,8 @@ form.addEventListener('submit', (e) => {
     e.preventDefault()
     if (email.value === "motionweb@gmail.com" && password.value === '12345678') {
         text.innerHTML = "Добро Пожалавать"
-        resetForm()
+        email.value = ""
+        password.value = ""
         setColor('white')
         text.style.background = 'green'
         text.style.borderRadius = '10px'
